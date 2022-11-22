@@ -17,7 +17,7 @@ public class Bingo {
                 tabla.printTable();
                 number = ball.generateRandomBall();
                 balls[i] = number;
-                System.out.println("El numero de la bola es: "+ 6);
+                System.out.println("El numero de la bola es: "+ balls[i]);
                 System.out.print("Press Enter to continue: \n");
                 input.nextLine();
                 i ++;

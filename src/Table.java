@@ -11,12 +11,7 @@ public class Table {
     }
     public void printTable() {
         for (int row = 0; row < 9; row++) {
-            if (row == 0) {
-                System.out.println("|\t{" + listOfTable[row][0] + "}\t|\t" + listOfTable[row][1] + "\t|\t" + listOfTable[row][2] + "\t|\t" + listOfTable[row][3] + "\t|\t" + listOfTable[row][4] + "\t|\t{" + listOfTable[row][5] + "}\t|\t" + listOfTable[row][6] + "\t|\t" + listOfTable[row][7] + "\t|\t" + listOfTable[row][8] + "\t|\t {" + listOfTable[row][9] + "}\t|\t");
-            } else {
-                System.out.println("|\t" + listOfTable[row][0] + "\t|\t" + listOfTable[row][1] + "\t|\t" + listOfTable[row][2] + "\t|\t" + listOfTable[row][3] + "\t|\t" + listOfTable[row][4] + "\t|\t" + listOfTable[row][5] + "\t|\t" + listOfTable[row][6] + "\t|\t" + listOfTable[row][7] + "\t|\t" + listOfTable[row][8] + "\t|\t" + listOfTable[row][9] + "\t|\t");
-            }
-
+            System.out.println("|\t" + listOfTable[row][0] + "\t|\t" + listOfTable[row][1] + "\t|\t" + listOfTable[row][2] + "\t|\t" + listOfTable[row][3] + "\t|\t" + listOfTable[row][4] + "\t|\t" + listOfTable[row][5] + "\t|\t" + listOfTable[row][6] + "\t|\t" + listOfTable[row][7] + "\t|\t" + listOfTable[row][8] + "\t|\t" + listOfTable[row][9] + "\t|\t");
         }
     }
 
