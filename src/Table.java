@@ -1,5 +1,5 @@
 public class Table {
-    public int[][] listOfTable = new int[11][10];
+    public int[][] listOfTable = new int[9][10];
     public Table() {
         int filler = 1;
         for(int row = 0; row < 9; row++) {
@@ -10,6 +10,7 @@ public class Table {
         }
     }
     public void printTable() {
+        System.out.println(":::::.B I N G O.::::::");
         for (int row = 0; row < 9; row++) {
             System.out.println("|\t" + listOfTable[row][0] + "\t|\t" + listOfTable[row][1] + "\t|\t" + listOfTable[row][2] + "\t|\t" + listOfTable[row][3] + "\t|\t" + listOfTable[row][4] + "\t|\t" + listOfTable[row][5] + "\t|\t" + listOfTable[row][6] + "\t|\t" + listOfTable[row][7] + "\t|\t" + listOfTable[row][8] + "\t|\t" + listOfTable[row][9] + "\t|\t");
         }

@@ -1,8 +1,8 @@
 import java.util.Random;
 
 public class RandomBall {
+    Random random = new Random();
     public int generateRandomBall() {
-        Random random = new Random();
         return random.nextInt(90);
     }
 }

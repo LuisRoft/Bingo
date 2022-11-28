@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Bingo {
@@ -6,23 +8,23 @@ public class Bingo {
         Table tabla = new Table();
 
 
-        int[] balls = new int [90];
+        List<Integer> balls = new ArrayList<>();;
+        int randomBall = 0;
 
         Scanner input = new Scanner(System.in);
+        System.out.print("Press enter to start: \n");
+        input.nextLine();
+        tabla.printTable();
 
-        int i = 0;
-        int number = 0;
-        while(true){
-            do {
-                tabla.printTable();
-                number = ball.generateRandomBall();
-                balls[i] = number;
-                System.out.println("El numero de la bola es: "+ balls[i]);
-                System.out.print("Press Enter to continue: \n");
+        while (balls.size() != 90) {
+            randomBall = ball.generateRandomBall();
+            if (!balls.contains(randomBall)) {
+                balls.add(randomBall);
+                System.out.println("La bola es: " + randomBall);
+                System.out.print("Press enter to continue: \n");
                 input.nextLine();
-                i ++;
-
-            } while (balls[i] != number);
+                tabla.printTable();
+            }
         }
     }
 
